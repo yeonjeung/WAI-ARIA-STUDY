@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* tab UI */
+.tab_wrap {
+	width: 500px;
+}
+.tab_list:after {
+	display: block;
+	clear: both;
+	content: "";
+}
+.tab_list li {
+	float: left;
+	display: block;
+	background: #999;
+	color: #fff;
+	padding: 10px;
+	margin-right: 5px;
+	border: 2px solid #aaa;
+	border-radius: 10px;
+	position: relative;
+	top: 2px;
+}
+[aria-selected="true"] {
+	background: #fff !important;
+	color: #aaa !important;
+	font-weight: bold;
+}
+.tab_cont {
+	padding: 15px;
+	border: 2px solid #aaa;
+	z-index: 5;
+}
+.unvisual {
+	display: none;
+}
